@@ -45,7 +45,7 @@ void loop() {
      //Serial.println(pulse[i]);
   }
 
-  for(byte j = 0; j <= 5; j++)    //Transmit signal
+  for(byte j = 0; j <= 4; j++)    //Transmit signal
   {
     if (pulse[j] == 1)    //High frequency for 1
     {
@@ -146,44 +146,44 @@ byte getOpcode()    //Get user input from buttons
   switch (total) {    //1 hot to binary
    case 1: opcode = 0; break;
    case 2: opcode = 1; break;
-   case 3: opcode = 2; break;
-   case 4: opcode = 3; break;
-   case 10: opcode = 4; break;
-   case 12: opcode = 5; break;
-   case 13: opcode = 6; break;
-   case 14: opcode = 7; break;
-   case 20: opcode = 8; break;
-   case 21: opcode = 9; break;
-   case 23: opcode = 10; break;
-   case 24: opcode = 11; break;
-   case 30: opcode = 12; break;
-   case 31: opcode = 13; break;
-   case 32: opcode = 14; break;
-   case 34: opcode = 15; break;
-   case 40: opcode = 16; break;
-   case 41: opcode = 17; break;
-   case 42: opcode = 18; break;
-   case 43: opcode = 19; break;
-   case 101: opcode = 20; break;
-   case 102: opcode = 21; break;
-   case 103: opcode = 22; break;
-   case 104: opcode = 23; break;
-   case 110: opcode = 24; break;
-   case 112: opcode = 25; break;
-   case 113: opcode = 26; break;
-   case 114: opcode = 27; break;
-   case 120: opcode = 28; break;
-   case 121: opcode = 29; break;
-   case 123: opcode = 30; break;
-   case 124: opcode = 31; break;
-   case 130: opcode = 32; break;
-   case 131: opcode = 33; break;
-   case 132: opcode = 34; break;
-   case 134: opcode = 35; break;
-   case 140: opcode = 36; break;
-   case 141: opcode = 37; break;
-   case 142: opcode = 38; break;
-   case 143: opcode = 39; break;
+   //case 3: opcode = 2; break; invalid
+   case 4: opcode = 2; break;
+   case 10: opcode = 3; break;
+   //case 12: opcode = 5; break; invalid
+   case 13: opcode = 4; break;
+   case 14: opcode = 5; break;
+   case 20: opcode = 6; break;
+   //case 21: opcode = 9; break; invalid
+   case 23: opcode = 7; break;
+   case 24: opcode = 8; break;
+   //case 30: opcode = 12; break; invalid
+   case 31: opcode = 9; break;
+   case 32: opcode = 10; break;
+   case 34: opcode = 11; break;
+   case 40: opcode = 12; break;
+   case 41: opcode = 13; break;
+   case 42: opcode = 14; break;
+   case 43: opcode = 15; break;
+   case 101: opcode = 16; break;
+   case 102: opcode = 17; break;
+   //case 103: opcode = 18; break; invalid
+   case 104: opcode = 18; break;
+   case 110: opcode = 19; break;
+   //case 112: opcode = 20; break; invalid
+   case 113: opcode = 20; break;
+   case 114: opcode = 21; break;
+   case 120: opcode = 22; break;
+   //case 121: opcode = 29; break; invalid
+   case 123: opcode = 23; break;
+   case 124: opcode = 24; break;
+   //case 130: opcode = 32; break; invalid
+   case 131: opcode = 25; break;
+   case 132: opcode = 26; break;
+   case 134: opcode = 27; break;
+   case 140: opcode = 28; break;
+   case 141: opcode = 29; break;
+   case 142: opcode = 30; break;
+   case 143: opcode = 31; break;
    default: Serial.println("Invalid state!");
   }
   return opcode;
