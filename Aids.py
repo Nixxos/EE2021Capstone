@@ -38,9 +38,9 @@ def drive(target_distance, direction):
     #linear variable init
     linear_error_prior = 0
     linear_integral_prior = 0
-    linear_KP = #arbitrary value
-    linear_KI = #arbitrary value
-    linear_KD = #arbitrary value
+    linear_KP = 2 #arbitrary value
+    linear_KI = 5 #arbitrary value
+    linear_KD = 0 #arbitrary value
     linear_tolerance = #arbitrary value
     #angular variable init
     angular_error_prior = 0
@@ -126,6 +126,10 @@ class DecodeOpcode:
         drive(14,2)
         #getball
         drive(7,2)
+        drive(52,3)
+        #Call Arm Function
+        drive(52,1)
+        drive(7,0)
         return m
  
     def case_1(self):
@@ -139,6 +143,10 @@ class DecodeOpcode:
         drive(9,2)
         #getball
         drive(7,2)
+        drive(19,3)
+        #Call Arm Function
+        drive(19,1)
+        drive(7,0)
         return m
  
     def case_2(self):
@@ -150,6 +158,10 @@ class DecodeOpcode:
         drive(14,2)
         #getball
         drive(7,2)
+        drive(52,3)
+        #Call Arm Function
+        drive(52,1)
+        drive(7,0)
         return m
  
     def case_3(self):
@@ -161,6 +173,13 @@ class DecodeOpcode:
         drive(14,2)
         #getball
         drive(7,2)
+        drive(52,3)
+        #Call Arm Function
+        drive(19,1)
+        drive(5,0)
+        drive(5,2)
+        drive(33,1)
+        drive(7,0)
         return m
  
     def case_4(self):
@@ -174,6 +193,13 @@ class DecodeOpcode:
         drive(9,2)
         #getball
         drive(7,2)
+        drive(52,3)
+        #Call Arm Function
+        drive(19,1)
+        drive(5,0)
+        drive(5,2)
+        drive(33,1)
+        drive(7,0)
         return m
  
     def case_5(self):
@@ -185,6 +211,13 @@ class DecodeOpcode:
         drive(14,2)
         #getball
         drive(7,2)
+        drive(52,3)
+        #Call Arm Function
+        drive(19,1)
+        drive(5,0)
+        drive(5,2)
+        drive(33,1)
+        drive(7,0)
         return m
  
     def case_6(self):
@@ -198,6 +231,10 @@ class DecodeOpcode:
         drive(9,2)
         #getball
         drive(7,2)
+        drive(19,3)
+        #Call Arm Function
+        drive(19,1)
+        drive(7,0)
         return m
         
     def case_7(self):
@@ -209,6 +246,10 @@ class DecodeOpcode:
         drive(14,2)
         #getball
         drive(7,2)
+        drive(19,3)
+        #Call Arm Function
+        drive(19,1)
+        drive(7,0)
         return m
 
     def case_8(self):
@@ -220,6 +261,10 @@ class DecodeOpcode:
         drive(14,2)
         #getball
         drive(7,2)
+        drive(19,3)
+        #Call Arm Function
+        drive(19,1)
+        drive(7,0)
         return m
 
     def case_9(self):
@@ -233,6 +278,10 @@ class DecodeOpcode:
         drive(9,2)
         #getball
         drive(7,2)
+        drive(52,3)
+        #Call Arm Function
+        drive(52,1)
+        drive(7,0)
         return m
 
     def case_10(self):
@@ -244,6 +293,10 @@ class DecodeOpcode:
         drive(14,2)
         #getball
         drive(7,2)
+        drive(19,3)
+        #Call Arm Function
+        drive(19,1)
+        drive(7,0)
         return m
 
     def case_11(self):
@@ -255,6 +308,10 @@ class DecodeOpcode:
         drive(14,2)
         #getball
         drive(7,2)
+        drive(19,3)
+        #Call Arm Function
+        drive(19,1)
+        drive(7,0)
         return m
 
     def case_12(self):
@@ -266,6 +323,10 @@ class DecodeOpcode:
         drive(14,2)
         #getball
         drive(7,2)
+        drive(52,3)
+        #Call Arm Function
+        drive(52,1)
+        drive(7,0)
         return m
 
     def case_13(self):
@@ -277,6 +338,10 @@ class DecodeOpcode:
         drive(14,2)
         #getball
         drive(7,2)
+        drive(52,3)
+        #Call Arm Function
+        drive(52,1)
+        drive(7,0)
         return m
 
     def case_14(self):
@@ -288,6 +353,10 @@ class DecodeOpcode:
         drive(14,2)
         #getball
         drive(7,2)
+        drive(19,3)
+        #Call Arm Function
+        drive(19,1)
+        drive(7,0)
         return m
 
     def case_15(self):
@@ -299,6 +368,10 @@ class DecodeOpcode:
         drive(14,2)
         #getball
         drive(7,2)
+        drive(19,3)
+        #Call Arm Function
+        drive(19,1)
+        drive(7,0)
         return m        
     
         
