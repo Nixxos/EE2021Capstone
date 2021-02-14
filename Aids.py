@@ -372,7 +372,67 @@ class DecodeOpcode:
         #Call Arm Function
         drive(19,1)
         drive(7,0)
-        return m        
+        return m
+    
+    def case_16(self):  #ghosts 0,1
+        #lvl1
+        drive(15,1)
+        drive(5,2)   #in block 3 location
+        #lvl2
+        drive(14,2)  #in block 2 location
+        #getball
+        drive(7,2)   #in power pellet highway
+        drive(19,1)  #power pellet 1
+        
+    def case_17(self):  #ghosts 0,2
+        #lvl1
+        drive(15,1)
+        drive(5,2)   #in block 3 location
+        #lvl2
+        drive(5,2)
+        drive(33,3)  #crossing block 4 location
+        drive(9,2)   #in block 1 location
+        #getball
+        drive(7,2)
+        drive(52,1)  #power pellet 1
+        #call arm
+        
+    def case_18(self):    #ghosts 0,4
+        #lvl1
+        drive(15,1)
+        drive(5,2)  #in block 3 location
+        #lvl2
+        drive(14,2)  #in block 2 location
+        #getball
+        drive(7,2)   #in power pellet highway
+        drive(19,1)  #power pellet 1
+        #call arm
+        
+    def case_19(self):   #ghosts 0,1  same route at op 16
+        #lvl1
+        drive(15,1)
+        drive(5,2)   #in block 3 location
+        #lvl2
+        drive(14,2)  #in block 2 location
+        #getball
+        drive(7,2)
+        drive(19,1)  #power pellet 1
+        #call arm
+        
+    def case_20(self):  #ghosts 1,3
+        #lvl1
+        drive(15,3)
+        drive(5,2)  #in block 0 location
+        #lvl2
+        drive(33,1)
+        drive(9,2)  #in block 2 location
+        #getball
+        drive(7,2)
+        drive(19,1)  #power pellet 1
+        #call arm
+        
+        
+        
     
         
 s = DecodeOpcode()
