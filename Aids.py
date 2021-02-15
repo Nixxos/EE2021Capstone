@@ -424,14 +424,137 @@ class DecodeOpcode:
         drive(15,3)
         drive(5,2)  #in block 0 location
         #lvl2
-        drive(33,1)
+        drive(5,2)
+        drive(33,1) #crossing block 4
         drive(9,2)  #in block 2 location
         #getball
         drive(7,2)
         drive(19,1)  #power pellet 1
         #call arm
+
+    def case_21(self):  #ghosts 1,4
+        #lvl1
+        drive(15,1)
+        drive(5,2)  #in block 3 location
+        #lvl2
+        drive(14,2)  #in block 2 location
+        #getball
+        drive(7,2)
+        drive(19,1) #power pellet 1
+        #call arm
+    
+    def case_22(self):  #ghosts 2,0
+        #lvl1
+        drive(15,1)
+        drive(5,2)   #in block 3 location
+        #lvl2
+        drive(5,2)
+        drive(33,3) #crossing block 4
+        drive(9,2)  #in block 1
+        #getball
+        drive(7,2)
+        drive(52,1) #power pellet 1
+        #call arm
         
+    def case_23(self):  #ghosts 2,3
+        #lvl1
+        drive(15,3)
+        drive(5,2)  #in block 0 location
+        #lvl2
+        drive(14,2) #in block 1 location
+        #getball
+        drive(7,2)
+        drive(52,1)  #power pellet 1
+        #call arm
         
+    def case_24(self):  #ghosts 2,4
+        #lvl1
+        drive(15,3)
+        drive(5,2)  #in block 0 location
+        #lvl2
+        drive(14,2)  #in block 1 location
+        #getball
+        drive(7,2)
+        drive(52,1)  #power pellet 1
+        #call arm
+        
+    def case_25(self):  #ghosts 3,1
+        #lvl1
+        drive(15,3)
+        drive(5,2)  #in block 0 location
+        #lvl2
+        drive(5,2)
+        drive(33,1) #crossing block 4
+        drive(9,2)  #in block 2 location
+        #getball
+        drive(7,2)
+        drive(19,1)  #power pellet 1
+        #call arm
+    
+    def case_26(self):  #ghosts 3,2
+        #lvl1
+        drive(15,3)
+        drive(5,2)  #in block o location
+        #lv2
+        drive(14,2) #in block 1 location
+        #getball
+        drive(7,2)
+        drive(52,1) #power pellet 1
+        #call arm
+        
+    def case_27(self):  #ghosts 3,4
+        #lvl1
+        drive(15,3)
+        drive(5,2)  #in block 0 location
+        #lvl2
+        drive(14,2) #in block 1 location
+        #getball
+        drive(7,2)
+        drive(52,1) #power pellet 1
+        #call arm
+    def case_28(self):  #ghosts 4,0
+        #lvl1
+        drive(15,1)
+        drive(5,2)  #in block 3 location
+        #lvl2
+        drive(14,2) #in block 2 location
+        #getball
+        drive(7,2)
+        drive(19,1)  #power pellet 1
+        #call arm
+    
+    def case_29(self):  #ghosts 4,1
+        #lvl1
+        drive(15,1)
+        drive(5,2)  #in block 3
+        #lvl2
+        drive(14,2) #in block 2 location
+        #get ball
+        drive(7,2)
+        drive(19,1) #power pellet 1
+        #call arm
+        
+    def case_30(self):  #ghosts 4,2
+        #lvl1
+        drive(15,3)
+        drive(5,2)  #in block 0 location
+        #lvl2
+        drive(14,2)  #in block 1 location
+        #get ball
+        drive(7,2)
+        drive(52,1)  #power pellet 1
+        #call arm
+        
+    def case_31(self):  #ghosts 4,3
+        #lvl1
+        drive(15,3)
+        drive(5,2)  #in block 0 location
+        #lvl2
+        drive(14,2)  #in block 1 locaion
+        #getball
+        drive(7,2)
+        drive(52,1)
+        #call arm
         
     
         
